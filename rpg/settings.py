@@ -46,8 +46,8 @@ INSTALLED_APPS = [
     'graphene_django',
     'rest_framework',
     # Our apps
-    'armory',
-    'charactercreator',
+    'rpg.armory',
+    'rpg.charactercreator',
 ]
 
 MIDDLEWARE = [
@@ -94,7 +94,7 @@ REST_FRAMEWORK = {
 }
 
 GRAPHENE = {
-    'SCHEMA': 'charactercreator.schema.schema'
+    'SCHEMA': 'rpg.charactercreator.schema.schema'
 }
 
 WSGI_APPLICATION = 'rpg.wsgi.application'
@@ -109,6 +109,18 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'tspmqnqd',
+#         'USER': 'tspmqnqd',
+#         'PASSWORD': ''
+#         'HOST': 'baasu.db.elephantsql.com',
+#         'PORT': '5432',
+#     }
+# }
+
 
 
 # Password validation
