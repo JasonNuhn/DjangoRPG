@@ -1,1 +1,1 @@
-web: gunicorn djangorpg300.wsgi --log-file -
+web: gunicorn rpg.wsgi
